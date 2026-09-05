@@ -10,35 +10,34 @@
 
 window.PORTFOLIO = {
   name: "Dylan Miller",
-  headline: "Mechanical Engineering • Design • Prototyping • Testing",
+  headline: "Pursing Mechanical Engineering | 2026 Terry Scholar | University Honors Program",
   school: "Texas A&M University",
-  intro:
-    "Engineering student focused on turning ideas into functional prototypes through CAD, hands-on fabrication, controlled testing, and iterative problem solving.",
+  intro: "Aspiring Vehicle Validation and Testing Engineer actively seeking a 2027 Summer Mechanical Engineering Internship. Hands-on experience with turning ideas into functional prototypes through CAD, CNC Machinery, fabrication, controlled testing, and iterative problem solving.",
 
-  email: "YOUR_EMAIL@example.com",
-  linkedin: "https://www.linkedin.com/in/YOUR-LINKEDIN",
+  email: "dylanmiller4@tamu.edu",
+  linkedin: "https://www.linkedin.com/in/dylanmiller4",
 
   resumeFile: "resume.html",
 
   stats: [
-    { value: "3+", label: "Controlled test variables" },
-    { value: "10", label: "Launch angles tested" },
-    { value: "3D", label: "Printed prototype development" },
-    { value: "7+", label: "Energy transformations" }
+    { value: "100%", label: "Up-time across $200,000+ of Haas CNC lathes and mills." },
+    { value: "9th", label: "Placement in the FIRST Tech Challenge, involving 200,000+ students across 110+ countries." },
+    { value: "8+", label: "Technical engineering projects." },
+    { value: "30+", label: "Applicable physics projects and labs." }
   ],
 
   featured: {
     title: "Scent-Based Alarm Clock",
     eyebrow: "Featured Engineering Project",
     description:
-      "Developed the first draft of a patent-pending scent-based alarm clock. Led CAD development, component integration, soldering, breadboard circuitry, 3D printing, and controlled testing of fan speed, placement, and scent selection.",
+      "Developed the first prototype of a patent-pending scent-based alarm clock. Successfully presented and defended my alarm clock prototype before 5 industry professionals. Led CAD development, component integration, soldering, breadboard circuitry, 3D printing, and controlled testing of fan speed, placement, and scent selection.",
     image: "alarm-cad.png",
     pdf: "engineering-project-portfolio.pdf",
     tags: [
-      "CAD",
-      "3D Printing",
+      "CAD Design",
+      "Presentation",
       "Soldering",
-      "Testing",
+      "Data Collection",
       "Prototype Development"
     ]
   },
@@ -48,7 +47,7 @@ window.PORTFOLIO = {
       title: "Scent-Based Alarm Clock",
       category: "Engineering Design",
       description:
-        "Led the CAD development and physical integration of the reservoir, atomization disk, fan, wiring, and electrical components into a functional 3D-printed prototype.",
+        "Managed the CAD development and physical integration of the reservoir, atomization disk, fan, wiring, and electrical components into a functional 3D-printed prototype.",
       image: "alarm-cad.png",
       link: "engineering-project-portfolio.pdf",
       tags: ["CAD", "3D Printing", "Soldering"]
@@ -78,7 +77,7 @@ window.PORTFOLIO = {
       title: "Rube Goldberg Machine",
       category: "Physics / Systems",
       description:
-        "Designed and built a multi-stage machine incorporating 7+ energy transformations and personally led the mechanical design of the final stages.",
+        "Designed and built a multi-stage machine incorporating 7+ energy transformations, personally leading the mechanical design of the final stages.",
       image: "rube-goldberg.png",
       link: "physics-project-portfolio.pdf",
       tags: ["Systems", "Mechanisms", "Energy"]
