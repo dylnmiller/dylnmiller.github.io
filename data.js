@@ -17,13 +17,13 @@ window.PORTFOLIO = {
   email: "dylanmiller4@tamu.edu",
   linkedin: "https://www.linkedin.com/in/dylanmiller4",
 
-  resumeFile: "resume.html",
+  resumeFile: "Resume.docx.pdf",
 
   stats: [
+    { value: "30+%", label: "Applicable physics projects and labs." },
     { value: "100%", label: "Up-time across $200,000+ of Haas CNC lathes and mills." },
     { value: "9th", label: "Placement in the FIRST Tech Challenge, involving 200,000+ students across 110+ countries." },
-    { value: "8+", label: "Technical engineering projects." },
-    { value: "30+", label: "Applicable physics projects and labs." }
+    { value: "8+", label: "Technical engineering projects." }
   ],
 
   featured: {
@@ -32,7 +32,7 @@ window.PORTFOLIO = {
     description:
       "Developed the first prototype of a patent-pending scent-based alarm clock. Successfully presented and defended my alarm clock prototype before 5 industry professionals. Led CAD development, component integration, soldering, breadboard circuitry, 3D printing, and controlled testing of fan speed, placement, and scent selection.",
     image: "alarm-cad.png",
-    pdf: "engineering-project-portfolio.pdf",
+    pdf: "Engineering Project Portfolio (3).pdf",
     tags: [
       "CAD Design",
       "Presentation",
@@ -49,7 +49,7 @@ window.PORTFOLIO = {
       description:
         "Managed the CAD development and physical integration of the reservoir, atomization disk, fan, wiring, and electrical components into a functional 3D-printed prototype.",
       image: "alarm-cad.png",
-      link: "engineering-project-portfolio.pdf",
+      link: "Engineering Project Portfolio (3).pdf",
       tags: ["CAD", "3D Printing", "Soldering"]
     },
 
@@ -59,7 +59,7 @@ window.PORTFOLIO = {
       description:
         "Collaborated to build a functional launcher for a 500+ student pep rally. Tested 5+ pressure levels, 10 launch angles, and 5+ folding methods to improve distance and accuracy.",
       image: "tshirt-cannon.png",
-      link: "physics-project-portfolio.pdf",
+      link: "Physics Project Portfolio (2).pdf",
       tags: ["Testing", "Projectile Motion", "Iteration"]
     },
 
@@ -69,7 +69,7 @@ window.PORTFOLIO = {
       description:
         "Independently led mechanical development and construction while testing arm length, spring tension, and release angle across multiple target distances.",
       image: "catapult.png",
-      link: "physics-project-portfolio.pdf",
+      link: "Physics Project Portfolio (2).pdf",
       tags: ["Mechanisms", "Experimental Design", "Precision"]
     },
 
@@ -79,7 +79,7 @@ window.PORTFOLIO = {
       description:
         "Designed and built a multi-stage machine incorporating 7+ energy transformations, personally leading the mechanical design of the final stages.",
       image: "rube-goldberg.png",
-      link: "physics-project-portfolio.pdf",
+      link: "Physics Project Portfolio (2).pdf",
       tags: ["Systems", "Mechanisms", "Energy"]
     },
 
@@ -89,7 +89,7 @@ window.PORTFOLIO = {
       description:
         "Designed a toy train, custom chess piece, and soccer jersey charm. Also developed manufacturing parts and learned to operate Haas CNC lathes and mills while producing a wind-powered motor.",
       image: "cad-projects.png",
-      link: "engineering-project-portfolio.pdf",
+      link: "Engineering Project Portfolio (3).pdf",
       tags: ["CAD", "CNC", "Manufacturing"]
     },
 
@@ -99,7 +99,7 @@ window.PORTFOLIO = {
       description:
         "Additional hands-on builds included a cardboard boat, toothpick tower, mousetrap car, electric generator, hot-air balloon, and a Boulder Adventure Park review project.",
       image: "physics-builds.png",
-      link: "physics-project-portfolio.pdf",
+      link: "Physics Project Portfolio (2).pdf",
       tags: ["Prototyping", "Testing", "Problem Solving"]
     }
   ]
