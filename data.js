@@ -105,32 +105,3 @@ window.PORTFOLIO = {
     }
   ]
 };
-After you paste it
-
-Your GitHub repository should look like this:
-
-dylnmiller.github.io
-│
-├── index.html
-├── data.js          ← the code above
-├── script.js
-├── styles.css
-│
-├── alarm-cad.png
-├── alarm-concept.png
-├── cad-projects.png
-├── catapult.png
-├── physics-builds.png
-├── rube-goldberg.png
-├── tshirt-cannon.png
-│
-├── engineering-project-portfolio.pdf
-├── physics-project-portfolio.pdf
-├── alarm-clock-project-proposal.pdf
-│
-├── resume.html
-└── CNAME
-      tags: ["Prototyping", "Testing", "Problem Solving"]
-    }
-  ]
-};
