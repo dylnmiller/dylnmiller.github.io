@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dylan Miller — Mechanical Engineering Portfolio" />
+  <title>Dylan Miller | Engineering Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Home">
+      <span class="brand-mark">DM</span>
+      <span class="brand-text">Dylan Miller<span>Engineering Portfolio</span></span>
+    </a>
+
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#about">About</a>
+      <a href="resume.html">Resume</a>
+      <a class="nav-cta" href="#contact">Contact</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-copy">
+        <div class="kicker"><span></span> ENGINEERING • DESIGN • BUILD • TEST</div>
+        <h1>Turning engineering<br><em>ideas into prototypes.</em></h1>
+        <p id="intro"></p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">Explore Projects <span>↘</span></a>
+          <a class="btn secondary" id="resumeHero" href="resume.html">View Resume</a>
+        </div>
+
+        <div class="quick-links">
+          <a id="linkedinHero" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="#contact">Contact ↘</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="blueprint-card">
+          <div class="bp-grid"></div>
+          <div class="bp-label">SELECTED WORK / 2024—2026</div>
+          <div class="bp-number">01</div>
+          <div class="bp-title">SCENT-BASED<br>ALARM CLOCK</div>
+          <div class="bp-line"></div>
+          <div class="bp-spec"><span>CAD</span><b>3D PROTOTYPE</b></div>
+          <div class="bp-spec"><span>TEST</span><b>ITERATION</b></div>
+          <div class="bp-spec"><span>BUILD</span><b>ELECTRICAL</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats section-tight" id="stats"></section>
+
+    <section class="section featured" id="featured">
+      <div class="section-heading">
+        <div>
+          <div class="kicker"><span></span> FEATURED PROJECT</div>
+          <h2 id="featuredTitle"></h2>
+        </div>
+        <span class="section-index">01 / 06</span>
+      </div>
+
+      <div class="featured-grid">
+        <div class="featured-image">
+          <img id="featuredImg" alt="Featured engineering project" />
+          <div class="image-caption">CAD + physical integration</div>
+        </div>
+        <div class="featured-copy">
+          <p class="eyebrow" id="featuredEyebrow"></p>
+          <p id="featuredDescription"></p>
+          <div class="tag-list" id="featuredTags"></div>
+          <a class="text-link" id="featuredPdf" target="_blank">Open project portfolio <span>↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="section-heading">
+        <div>
+          <div class="kicker"><span></span> SELECTED PROJECTS</div>
+          <h2>Built. Tested. Improved.</h2>
+        </div>
+        <p class="heading-note">A quick look at hands-on engineering, physics, CAD, and manufacturing work.</p>
+      </div>
+
+      <div class="filters" id="filters"></div>
+      <div class="project-grid" id="projectGrid"></div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="section-heading">
+        <div>
+          <div class="kicker"><span></span> CAPABILITIES</div>
+          <h2>What I bring to a team.</h2>
+        </div>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card">
+          <span class="skill-num">01</span>
+          <h3>Design & CAD</h3>
+          <p>Translate concepts into detailed diagrams, CAD models, component layouts, and functional physical designs.</p>
+          <div class="skill-tags"><span>CAD</span><span>Design</span><span>Dimensioning</span><span>3D Printing</span></div>
+        </article>
+        <article class="skill-card">
+          <span class="skill-num">02</span>
+          <h3>Prototype & Build</h3>
+          <p>Move from digital design to physical hardware using fabrication, electrical integration, soldering, breadboards, and mechanical assembly.</p>
+          <div class="skill-tags"><span>Prototyping</span><span>Soldering</span><span>Assembly</span><span>CNC</span></div>
+        </article>
+        <article class="skill-card">
+          <span class="skill-num">03</span>
+          <h3>Testing & Iteration</h3>
+          <p>Change variables, collect results, identify constraints, and use experimental evidence to refine performance.</p>
+          <div class="skill-tags"><span>Testing</span><span>Data</span><span>Iteration</span><span>Problem Solving</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="about-panel">
+        <div>
+          <div class="kicker"><span></span> ABOUT</div>
+          <h2>Engineering is where<br><em>design meets reality.</em></h2>
+        </div>
+        <div class="about-copy">
+          <p id="aboutText"></p>
+          <div class="about-details">
+            <div><span>FOCUS</span><strong>Mechanical Engineering</strong></div>
+            <div><span>APPROACH</span><strong>Design → Build → Test → Improve</strong></div>
+            <div><span>LOCATION</span><strong>Texas A&M University</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section documents-section">
+      <div class="section-heading">
+        <div>
+          <div class="kicker"><span></span> FULL PORTFOLIOS</div>
+          <h2>Want the full story?</h2>
+        </div>
+      </div>
+      <div class="document-grid">
+        <a class="document-card" href="documents/engineering-project-portfolio.pdf" target="_blank">
+          <span class="doc-type">PDF</span>
+          <h3>Engineering Project Portfolio</h3>
+          <p>Ben Barber Innovation Academy • 2024–2025</p>
+          <span class="text-link">Open PDF ↗</span>
+        </a>
+        <a class="document-card" href="documents/physics-project-portfolio.pdf" target="_blank">
+          <span class="doc-type">PDF</span>
+          <h3>Physics Project Portfolio</h3>
+          <p>AP Physics 1, 2, and C: Mechanics • 2024–2026</p>
+          <span class="text-link">Open PDF ↗</span>
+        </a>
+        <a class="document-card" href="documents/alarm-clock-project-proposal.pdf" target="_blank">
+          <span class="doc-type">PDF</span>
+          <h3>Alarm Clock Project Proposal</h3>
+          <p>Research, existing solutions, patents, and design requirements</p>
+          <span class="text-link">Open PDF ↗</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="contact-panel">
+        <div>
+          <div class="kicker"><span></span> LET'S CONNECT</div>
+          <h2>Have a project,<br>internship, or question?</h2>
+        </div>
+        <div class="contact-actions">
+          <a class="btn primary" id="emailLink">Email Me ↗</a>
+          <a class="btn secondary" id="linkedinLink" target="_blank" rel="noopener">LinkedIn ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© <span id="year"></span> Dylan Miller</span>
+    <span>Designed for career fairs & internship recruiting</span>
+    <a href="#top">Back to top ↑</a>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
