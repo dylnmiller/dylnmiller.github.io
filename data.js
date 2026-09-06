@@ -14,7 +14,7 @@ window.PORTFOLIO = {
   school: "Texas A&M University",
   intro: "Aspiring Vehicle Validation and Testing Engineer actively seeking a 2027 Summer Mechanical Engineering Internship. Hands-on experience with turning ideas into functional prototypes through CAD, CNC Machinery, fabrication, controlled testing, and iterative problem solving.",
 
-  email: "dylanmiller4@tamu.edu",
+  email: "dylanmiller212221@gmail.com",
   linkedin: "https://www.linkedin.com/in/dylanmiller4",
 
   resumeFile: "Resume.html",
