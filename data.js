@@ -56,7 +56,7 @@ window.PORTFOLIO = {
       category: "Robotics / Mechanical",
       description:
         "Calculated torque requirements and mechanical advantages to optimize a 4-motor drivetrain, increasing robot velocity by 15%. Designed and integrated a 3D-printed intake and lift arm mechanism in Fusion 360, reducing structural weight by 10%. Placed 9th internationally among 200,000+ students.",
-      image: "your-robot-image.png",
+      image: "ftc-lift-arm.jpg",
       link: "Engineering Project Portfolio (3).pdf",
       tags: ["Fusion 360", "Drivetrain Design", "C#", "Competition"]
     },
@@ -92,11 +92,21 @@ window.PORTFOLIO = {
     },
 
     {
+      title: "CNC Manufacturing & Machining",
+      category: "CAD / Manufacturing",
+      description:
+        "Operated Haas CNC lathes and mills to manufacture functional components from metal stock, including a wind-powered miniature air pump motor. Video shows live machining of a component from raw stock to finished part.",
+      video: "cnc-machining.mp4",
+      link: "Engineering Project Portfolio (3).pdf",
+      tags: ["CNC", "Manufacturing", "Haas Machinery"]
+    },
+
+    {
       title: "CAD & Manufacturing Projects",
       category: "CAD / Manufacturing",
       description:
         "Designed a toy train, custom chess piece, and soccer jersey charm. Also developed manufacturing parts and learned to operate Haas CNC lathes and mills while producing a wind-powered motor.",
-      image: "cad-projects.png",
+      image: "toy-train-cad.jpg",
       link: "Engineering Project Portfolio (3).pdf",
       tags: ["CAD", "CNC", "Manufacturing"]
     },
