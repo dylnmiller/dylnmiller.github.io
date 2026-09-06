@@ -10,17 +10,15 @@
 
 window.PORTFOLIO = {
   name: "Dylan Miller",
-  headline: "Pursing Mechanical Engineering | 2026 Terry Scholar | University Honors Program",
+  headline: "Pursuing Mechanical Engineering | 2026 Terry Scholar | University Honors Program",
   school: "Texas A&M University",
   intro: "Aspiring Vehicle Validation and Testing Engineer actively seeking a 2027 Summer Mechanical Engineering Internship. Hands-on experience with turning ideas into functional prototypes through CAD, CNC Machinery, fabrication, controlled testing, and iterative problem solving.",
 
   email: "dylanmiller212221@gmail.com",
   linkedin: "https://www.linkedin.com/in/dylanmiller4",
 
-  resumeFile: "Resume.html",
-
   stats: [
-    { value: "30+%", label: "Applicable physics projects and labs." },
+    { value: "30+", label: "Physics projects and labs designed, built, and tested." },
     { value: "100%", label: "Up-time across $200,000+ of Haas CNC lathes and mills." },
     { value: "9th", label: "Placement in the FIRST Tech Challenge, involving 200,000+ students across 110+ countries." },
     { value: "8+", label: "Technical engineering projects." }
@@ -51,6 +49,16 @@ window.PORTFOLIO = {
       image: "alarm-cad.png",
       link: "Engineering Project Portfolio (3).pdf",
       tags: ["CAD", "3D Printing", "Soldering"]
+    },
+
+    {
+      title: "FTC Robotics Drivetrain & Lift Arm",
+      category: "Robotics / Mechanical",
+      description:
+        "Calculated torque requirements and mechanical advantages to optimize a 4-motor drivetrain, increasing robot velocity by 15%. Designed and integrated a 3D-printed intake and lift arm mechanism in Fusion 360, reducing structural weight by 10%. Placed 9th internationally among 200,000+ students.",
+      image: "your-robot-image.png",
+      link: "Engineering Project Portfolio (3).pdf",
+      tags: ["Fusion 360", "Drivetrain Design", "C#", "Competition"]
     },
 
     {
