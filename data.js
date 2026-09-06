@@ -17,7 +17,7 @@ window.PORTFOLIO = {
   email: "dylanmiller4@tamu.edu",
   linkedin: "https://www.linkedin.com/in/dylanmiller4",
 
-  resumeFile: "Resume.docx.pdf",
+  resumeFile: "Resume.html",
 
   stats: [
     { value: "30+%", label: "Applicable physics projects and labs." },
