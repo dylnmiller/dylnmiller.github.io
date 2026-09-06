@@ -16,7 +16,10 @@ document.getElementById("linkedinLink").href = P.linkedin;
 const emailLink = document.getElementById("emailLink");
 
 if (emailLink) {
-  emailLink.href = `mailto:${P.email}`;
+  emailLink.href =
+    `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(P.email)}`;
+  emailLink.target = "_blank";
+  emailLink.rel = "noopener";
 }
 
 const stats = document.getElementById("stats");
