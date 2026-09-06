@@ -1,143 +1,597 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Resume | Dylan Miller</title>
-<link rel="stylesheet" href="styles.css">
-<style>
-.resume-page{padding-bottom:80px}
-.web-resume{background:#fff;border:1px solid var(--line);padding:42px;max-width:900px;margin-top:35px}
-.web-resume header{border-bottom:2px solid var(--ink);padding-bottom:18px;margin-bottom:24px}
-.web-resume h1{font-size:38px;margin:0 0 6px}
-.contact-line{font-size:12px;color:var(--muted)}
-.resume-section{margin-top:26px}
-.resume-section h2{font-size:13px;letter-spacing:.12em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:7px;margin-bottom:12px}
-.resume-item{margin-bottom:18px}
-.resume-item .top{display:flex;justify-content:space-between;gap:20px;font-size:13px}
-.resume-item .top strong{font-size:14px}
-.resume-item .date{color:var(--muted);white-space:nowrap}
-.resume-item .sub{font-size:11px;color:var(--muted);margin:2px 0 7px}
-.resume-item ul{margin:5px 0 0 18px;padding:0}
-.resume-item li{font-size:11.5px;margin:4px 0;color:#394554}
-.resume-tags{display:flex;flex-wrap:wrap;gap:7px}
-.resume-tags span{border:1px solid #cfd6dd;padding:6px 9px;font-size:10px;font-weight:750;text-transform:uppercase;letter-spacing:.06em}
-.resume-actions{display:flex;gap:10px;margin-top:25px;flex-wrap:wrap}
-@media(max-width:650px){.web-resume{padding:25px}.resume-item .top{display:block}.resume-item .date{display:block;margin-top:2px}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dylan Miller | Resume</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #f5f5f5;
+      color: #111;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.35;
+    }
+
+    .resume {
+      width: 8.5in;
+      min-height: 11in;
+      margin: 30px auto;
+      padding: 0.45in 0.55in;
+      background: white;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+    }
+
+    /* HEADER */
+
+    .header {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .name {
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+    }
+
+    .contact {
+      font-size: 10.5px;
+      color: #333;
+    }
+
+    .contact a {
+      color: #111;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    /* SECTIONS */
+
+    .section {
+      margin-top: 9px;
+    }
+
+    .section-title {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      border-bottom: 1.5px solid #111;
+      padding-bottom: 2px;
+      margin-bottom: 5px;
+    }
+
+    /* EDUCATION / EXPERIENCE */
+
+    .entry {
+      margin-bottom: 6px;
+    }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 10px;
+    }
+
+    .entry-title {
+      font-size: 10.5px;
+      font-weight: 700;
+    }
+
+    .entry-date {
+      font-size: 9.5px;
+      white-space: nowrap;
+      text-align: right;
+    }
+
+    .entry-subtitle {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 10px;
+      font-size: 9.5px;
+      font-style: italic;
+    }
+
+    .entry-location {
+      white-space: nowrap;
+      text-align: right;
+      font-style: normal;
+    }
+
+    ul {
+      margin: 2px 0 0 16px;
+      padding: 0;
+    }
+
+    li {
+      font-size: 9.3px;
+      margin-bottom: 2px;
+      padding-left: 1px;
+    }
+
+    /* PROFESSIONAL DEVELOPMENT */
+
+    .development {
+      font-size: 9.5px;
+      margin-top: 2px;
+    }
+
+    .development strong {
+      font-weight: 700;
+    }
+
+    /* LINKS */
+
+    .portfolio-link {
+      color: #111;
+      text-decoration: none;
+    }
+
+    .portfolio-link:hover {
+      text-decoration: underline;
+    }
+
+    /* PRINT */
+
+    @media print {
+      body {
+        background: white;
+      }
+
+      .resume {
+        width: 8.5in;
+        min-height: 11in;
+        margin: 0;
+        padding: 0.45in 0.55in;
+        box-shadow: none;
+      }
+
+      @page {
+        size: Letter;
+        margin: 0;
+      }
+    }
+
+    /* MOBILE */
+
+    @media screen and (max-width: 900px) {
+      .resume {
+        width: 95%;
+        min-height: auto;
+        margin: 15px auto;
+        padding: 25px;
+      }
+
+      .entry-header,
+      .entry-subtitle {
+        flex-direction: column;
+        gap: 0;
+      }
+
+      .entry-date,
+      .entry-location {
+        text-align: left;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<header class="site-header">
-<a class="brand" href="index.html"><span class="brand-mark">DM</span><span class="brand-text">Dylan Miller<span>Engineering Portfolio</span></span></a>
-<nav><a href="index.html#projects">Projects</a><a href="index.html#skills">Skills</a><a href="index.html#about">About</a><a class="nav-cta" href="index.html#contact">Contact</a></nav>
-</header>
 
-<main class="resume-page">
-<div class="kicker"><span></span> RESUME</div>
-<h1>Engineering Resume</h1>
-<p class="resume-note">A web-friendly version for recruiters who want the highlights quickly. My project portfolio provides deeper technical detail.</p>
+  <main class="resume">
 
-<div class="resume-actions">
-<a class="btn primary" href="index.html#projects">Explore Projects ↘</a>
-<a class="btn secondary" href="index.html">Back to Portfolio</a>
-</div>
+    <!-- HEADER -->
 
-<section class="web-resume">
-<header>
-<h1>Dylan Miller</h1>
-<div class="contact-line">Open to Relocation • (817) 313-7919 • dylanmiller212221@gmail.com • linkedin.com/in/dylanmiller4</div>
-</header>
+    <header class="header">
+      <div class="name">Dylan Miller</div>
 
-<div class="resume-section">
-<h2>Education</h2>
-<div class="resume-item">
-<div class="top"><strong>Texas A&M University, College of Engineering</strong><span class="date">Expected May 2030</span></div>
-<div class="sub">College Station, TX • B.S. in General Engineering, pursuing entry to Mechanical Engineering through ETAM • University Honors Program</div>
-<ul><li>Terry Scholarship recipient — full-ride scholarship awarded through a competitive selection process emphasizing leadership, academic excellence, and financial need.</li></ul>
-</div>
-<div class="resume-item">
-<div class="top"><strong>Mansfield High School</strong><span class="date">Aug 2022 – May 2026</span></div>
-<div class="sub">Mansfield, TX • Rank 14/672 • 3.98/4.0 cumulative GPA • 103.691 weighted • SAT 1360 (750 Math) • 12 AP and 10 Honors courses</div>
-</div>
-</div>
+      <div class="contact">
+        <a href="tel:8173137919">(817) 313-7919</a>
+        |
+        <a href="mailto:dylanmiller212221@gmail.com">
+          dylanmiller212221@gmail.com
+        </a>
+        |
+        <a
+          href="https://www.linkedin.com/in/dylanmiller4"
+          target="_blank"
+        >
+          www.linkedin.com/in/dylanmiller4
+        </a>
+        |
+        <a
+          class="portfolio-link"
+          href="index.html"
+        >
+          Project Portfolio
+        </a>
+      </div>
+    </header>
 
-<div class="resume-section">
-<h2>Relevant Experience</h2>
-<div class="resume-item">
-<div class="top"><strong>Ben Barber Innovation Academy — Engineering Design Student</strong><span class="date">Jan 2024 – May 2025</span></div>
-<div class="sub">Mansfield, TX</div>
-<ul>
-<li>Operated Haas CNC lathes and mills, maintaining 100% up-time across $200,000+ of advanced manufacturing machinery.</li>
-<li>Presented and defended a patent-pending Scent-Based Alarm Clock prototype before 5 industry professionals.</li>
-<li>Managed production using $100,000+ of industrial CNC plasma tables, laser cutters, and professional 3D printers, manufacturing components for 8+ engineering projects weekly across 3 consecutive semesters.</li>
-<li>Used RoboCell Simulation and Autodesk Fusion 360 Inventor within the PLTW curriculum to design, test, and program automated robotic cells before physical manufacturing.</li>
-</ul>
-</div>
 
-<div class="resume-item">
-<div class="top"><strong>Physics Projects — Student / Team Member</strong><span class="date">Jan 2024 – May 2025</span></div>
-<div class="sub">Mansfield, TX</div>
-<ul>
-<li>Calibrated experimental setups and led 15+ distinct sensor arrays, including photogates, to capture high-frequency motion data.</li>
-<li>Conducted laboratory data analysis using propagation of error methods across multi-variable equations to isolate systematic mechanical friction from random environmental factors.</li>
-<li>Formulated, built, and tested 10+ physics projects and 20+ in-class labs.</li>
-</ul>
-</div>
+    <!-- EDUCATION -->
 
-<div class="resume-item">
-<div class="top"><strong>FIRST Tech Challenge Robotics — “Fighting Pickles”</strong><span class="date">Aug 2024 – May 2025</span></div>
-<div class="sub">Team Member</div>
-<ul>
-<li>Placed 9th in the FIRST Tech Challenge, an international STEM competition involving 200,000+ students across 110+ countries.</li>
-<li>Calculated torque requirements and mechanical advantages for a 4-motor drivetrain, increasing acceleration and field velocity parameters by 15%.</li>
-<li>Designed, built, and integrated an intake and custom lift-arm mechanism in Fusion 360 using 3D-printed components, reducing structural weight by 10%.</li>
-<li>Collaborated on a 10+ member cross-functional team to diagnose mechanical failures under tight time constraints.</li>
-<li>Programmed autonomous and driver-controlled robot functions in C#.</li>
-</ul>
-</div>
-</div>
+    <section class="section">
+      <div class="section-title">EDUCATION</div>
 
-<div class="resume-section">
-<h2>Work Experience</h2>
-<div class="resume-item">
-<div class="top"><strong>Family Automotive Towing & Recycling Business — Automotive Helper</strong><span class="date">May 2023 – Present</span></div>
-<ul><li>3+ years of hands-on mechanical aptitude with vehicles, equipment, towing, dismantling, material handling, and daily business operations.</li></ul>
-</div>
-<div class="resume-item">
-<div class="top"><strong>Walnut Creek Country Club — Head Lifeguard</strong><span class="date">May 2025 – Aug 2026</span></div>
-<ul><li>Promoted to Head Lifeguard and interviewed, hired, and mentored 30+ lifeguards while ensuring compliance with safety and city regulations.</li></ul>
-</div>
-<div class="resume-item">
-<div class="top"><strong>Lifetime Fitness — Lifeguard</strong><span class="date">May 2025 – July 2026</span></div>
-<ul><li>Recognized as a Service Champion and leading candidate for Lifeguard Supervisor through training and supporting new staff.</li></ul>
-</div>
-</div>
+      <div class="entry">
 
-<div class="resume-section">
-<h2>Leadership</h2>
-<div class="resume-item">
-<div class="top"><strong>National Honor Society — Vice-President & Treasurer</strong><span class="date">May 2024 – May 2026</span></div>
-<ul><li>Completed 90+ community-service hours while supporting chapter operations for 100+ members.</li><li>Organized a record-breaking canned-food drive with a 33% higher contribution rate and 10,000+ cans donated.</li></ul>
-</div>
-<div class="resume-item">
-<div class="top"><strong>Soccer — Varsity & Club Co-Captain</strong><span class="date">Aug 2022 – May 2026</span></div>
-<ul><li>Developed communication, adaptability, and collaborative problem-solving through team coordination and competitive play.</li></ul>
-</div>
-<div class="resume-item">
-<div class="top"><strong>High School Bowling — Varsity Captain</strong><span class="date">Aug 2024 – Jan 2026</span></div>
-<ul><li>Used a data-driven approach based on consistency, repetition, and adjustment between frames to improve performance under competitive conditions.</li></ul>
-</div>
-</div>
+        <div class="entry-header">
+          <div class="entry-title">
+            Texas A&M University, College of Engineering
+          </div>
 
-<div class="resume-section">
-<h2>Professional Development</h2>
-<div class="resume-tags">
-<span>Autodesk Fusion 360 Associate</span><span>RoboCell Simulation</span><span>ACE CNC</span><span>OSHA 10 General Industry</span><span>First Aid / CPR / AED</span>
-<span>Mechanical Design</span><span>Engineering Problem Solving</span><span>Design Iteration</span><span>Technical Communication</span><span>Leadership</span><span>Collaboration</span>
-</div>
-</div>
-</section>
-</main>
-<footer><span>© 2026 Dylan Miller</span><a href="index.html">Back to portfolio ↑</a></footer>
+          <div class="entry-date">
+            Expected May 2030
+          </div>
+        </div>
+
+        <div class="entry-subtitle">
+          <div>
+            Bachelor of Science in General Engineering | Pursuing Entry to Mechanical Engineering | University Honors Program
+          </div>
+
+          <div class="entry-location">
+            College Station, TX
+          </div>
+        </div>
+
+        <ul>
+          <li>
+            <strong>Terry Scholarship Recipient:</strong>
+            An extremely competitive, full-ride scholarship awarded to exceptional Texas students who demonstrate leadership,
+            academic excellence, and financial need through a rigorous essay and interview process.
+          </li>
+        </ul>
+
+      </div>
+    </section>
+
+
+    <!-- TECHNICAL EXPERIENCE -->
+
+    <section class="section">
+      <div class="section-title">TECHNICAL EXPERIENCE</div>
+
+      <!-- BEN BARBER -->
+
+      <div class="entry">
+
+        <div class="entry-header">
+          <div class="entry-title">
+            Ben Barber Innovation Academy | Engineering Design Student
+          </div>
+
+          <div class="entry-date">
+            Jan 2024 - May 2025
+          </div>
+        </div>
+
+        <div class="entry-subtitle">
+          <div></div>
+          <div class="entry-location">
+            Mansfield, TX
+          </div>
+        </div>
+
+        <ul>
+          <li>
+            Operated Haas CNC lathes and mills, maintaining 100% up-time across $200,000+ of advanced manufacturing machinery.
+          </li>
+
+          <li>
+            Successfully presented and defended a patent-pending Scent-Based Alarm Clock prototype before 5 industry professionals.
+          </li>
+
+          <li>
+            Managed production with $100,000+ worth of industrial CNC plasma tables, laser cutters, and professional 3D printers,
+            manufacturing components for 8+ engineering projects on a weekly basis across 3 consecutive semesters.
+          </li>
+
+          <li>
+            Maintained a 97% average across Introduction to Engineering Design (IED), Computer Integrated Manufacturing (CIM),
+            and Engineering Design & Development (EDD) coursework.
+          </li>
+
+          <li>
+            Designed and CNC-machined a wind-powered miniature air pump motor, machining functional components from metal stock
+            to convert rotational wind energy into working pneumatic output, achieving full functional performance on the first test run.
+          </li>
+
+          <li>
+            Modeled a two-car toy train in Autodesk Fusion 360, engineering the first car to strict pre-specified dimensions and
+            independently designing a second car with custom holiday-themed geometry and lettering to demonstrate open-ended design capability.
+          </li>
+
+          <li>
+            Utilized RoboCell Simulation software and Autodesk Inventor within the Project Lead the Way (PLTW — Recognized Texas A&M
+            University Partner) curriculum to program and automate robotic cells before physical manufacturing.
+          </li>
+        </ul>
+
+      </div>
+
+
+      <!-- FTC ROBOTICS -->
+
+      <div class="entry">
+
+        <div class="entry-header">
+          <div class="entry-title">
+            FIRST Tech Challenge Robotics | Team Member of the "Fighting Pickles"
+          </div>
+
+          <div class="entry-date">
+            Aug 2024 - May 2025
+          </div>
+        </div>
+
+        <div class="entry-subtitle">
+          <div></div>
+          <div class="entry-location">
+            Mansfield, TX
+          </div>
+        </div>
+
+        <ul>
+          <li>
+            Placed 9th in the FIRST Tech Challenge, an international STEM competition involving 200,000+ students across 110+ countries.
+          </li>
+
+          <li>
+            Calculated exact torque requirements and mechanical advantages to optimize a 4-motor drivetrain, increasing robot acceleration
+            and field velocity parameters by 15%.
+          </li>
+
+          <li>
+            Designed, built, and integrated an intake and custom lift arm mechanism in Fusion 360 using 3D-printed components,
+            reducing total structural weight by 10%.
+          </li>
+
+          <li>
+            Collaborated within a 10+ member cross-functional team to diagnose mechanical failures under tight time constraints,
+            ensuring 100% hardware readiness before alliance match play.
+          </li>
+
+          <li>
+            Programmed autonomous and driver-controlled robot functions in C#, improving reliability and match performance.
+          </li>
+        </ul>
+
+      </div>
+
+
+      <!-- AP PHYSICS -->
+
+      <div class="entry">
+
+        <div class="entry-header">
+          <div class="entry-title">
+            AP Physics | Team Project Member
+          </div>
+
+          <div class="entry-date">
+            Aug 2024 - May 2026
+          </div>
+        </div>
+
+        <div class="entry-subtitle">
+          <div></div>
+          <div class="entry-location">
+            Mansfield, TX
+          </div>
+        </div>
+
+        <ul>
+          <li>
+            Calibrated experimental setups, leading 15+ distinct sensor arrays, such as photogates, to capture high-frequency motion data.
+          </li>
+
+          <li>
+            Conducted laboratory data analysis, applying rigorous propagation of error methods across multi-variable equations to isolate
+            systematic mechanical friction from random environmental factors.
+          </li>
+
+          <li>
+            Formulated, built, and tested 10+ physics projects and 20+ in-class labs, catalyzing learning from failure rather than success.
+          </li>
+        </ul>
+
+      </div>
+
+    </section>
+
+
+    <!-- WORK EXPERIENCE -->
+
+    <section class="section">
+      <div class="section-title">WORK EXPERIENCE</div>
+
+      <!-- AUTOMOTIVE -->
+
+      <div class="entry">
+
+        <div class="entry-header">
+          <div class="entry-title">
+            Family Automotive Towing & Recycling Business | Automotive Helper
+          </div>
+
+          <div class="entry-date">
+            May 2023 - Present
+          </div>
+        </div>
+
+        <div class="entry-subtitle">
+          <div></div>
+          <div class="entry-location">
+            Dallas, TX
+          </div>
+        </div>
+
+        <ul>
+          <li>
+            Managed daily operations, towing dispatch, and material handling, developing practical knowledge of business management.
+          </li>
+
+          <li>
+            Diagnosed and assisted with repairs on customer and company vehicles, building 3+ years of hands-on mechanical aptitude.
+          </li>
+        </ul>
+
+      </div>
+
+
+      <!-- LIFEGUARD -->
+
+      <div class="entry">
+
+        <div class="entry-header">
+          <div class="entry-title">
+            Walnut Creek Country Club | Head Lifeguard
+          </div>
+
+          <div class="entry-date">
+            May 2025 - Aug 2026
+          </div>
+        </div>
+
+        <div class="entry-subtitle">
+          <div></div>
+          <div class="entry-location">
+            Mansfield, TX
+          </div>
+        </div>
+
+        <ul>
+          <li>
+            Promoted to Head Lifeguard by demonstrating consistent leadership and performance in a high-responsibility environment.
+          </li>
+
+          <li>
+            Interviewed, hired, and mentored 30+ lifeguards while ensuring compliance with safety and city regulations.
+          </li>
+
+          <li>
+            Fabricated the capability to analytically and visually detect flaws in certain systems such as pool safety regulations.
+          </li>
+        </ul>
+
+      </div>
+
+    </section>
+
+
+    <!-- LEADERSHIP EXPERIENCE -->
+
+    <section class="section">
+      <div class="section-title">LEADERSHIP EXPERIENCE</div>
+
+      <!-- NHS -->
+
+      <div class="entry">
+
+        <div class="entry-header">
+          <div class="entry-title">
+            National Honor Society | Vice President and Treasurer
+          </div>
+
+          <div class="entry-date">
+            May 2024 - May 2026
+          </div>
+        </div>
+
+        <div class="entry-subtitle">
+          <div></div>
+          <div class="entry-location">
+            Mansfield, TX
+          </div>
+        </div>
+
+        <ul>
+          <li>
+            Completed 90+ community-service hours while directing service initiatives and chapter operations for 100+ members.
+          </li>
+
+          <li>
+            Executed a record-breaking canned food drive that achieved a 33% higher contribution rate and 10,000+ can donation.
+          </li>
+
+          <li>
+            Conducted outreach to local and chain restaurants such as Chick-Fil-A, securing a 50% donation success rate for events.
+          </li>
+        </ul>
+
+      </div>
+
+
+      <!-- SOCCER -->
+
+      <div class="entry">
+
+        <div class="entry-header">
+          <div class="entry-title">
+            Soccer | Varsity and Club Co-Captain
+          </div>
+
+          <div class="entry-date">
+            Aug 2022 - May 2026
+          </div>
+        </div>
+
+        <div class="entry-subtitle">
+          <div></div>
+          <div class="entry-location">
+            Mansfield/Arlington, TX
+          </div>
+        </div>
+
+        <ul>
+          <li>
+            Cultivated communication and collaborative problem-solving skills by coordinating with a wide spectrum of teammates.
+          </li>
+
+          <li>
+            Analyzed opponents' strategies to model and set examples for teammates in extreme environments.
+          </li>
+        </ul>
+
+      </div>
+
+    </section>
+
+
+    <!-- PROFESSIONAL DEVELOPMENT -->
+
+    <section class="section">
+      <div class="section-title">PROFESSIONAL DEVELOPMENT</div>
+
+      <div class="development">
+        <strong>Certifications:</strong>
+        Autodesk Fusion 360 Associate, America's Cutting Edge (ACE) CNC,
+        OSHA 10-Hour General Industry, StarGuard Elite Adult First Aid/CPR/AED.
+      </div>
+
+      <div class="development">
+        <strong>Competencies:</strong>
+        Project Management, Mechanical Design, Engineering Problem Solving, Design Iteration,
+        Technical Communication, Leadership, Collaboration, Public Speaking, Attention to Detail,
+        Time Management, Adaptability, Customer Service, Microsoft 365.
+      </div>
+
+    </section>
+
+  </main>
+
 </body>
 </html>
