@@ -8,7 +8,7 @@ function filePath(file) {
 document.getElementById("intro").textContent = P.intro;
 
 document.getElementById("aboutText").textContent =
-  "My project work combines mechanical design, hands-on fabrication, electrical integration, controlled testing, and iterative problem solving. Across physics and engineering projects, I have taken concepts from sketches and calculations into physical systems and used test results to refine them.";
+  "Currently completing Texas A&M's General Engineering core within the University Honors Program, with an intended track into Mechanical Engineering. My project work combines mechanical design, hands-on fabrication, electrical integration, controlled testing, and iterative problem solving — taking concepts from sketches and calculations into physical systems and using test results to refine them.";
 
 document.getElementById("linkedinHero").href = P.linkedin;
 document.getElementById("linkedinLink").href = P.linkedin;
@@ -16,8 +16,7 @@ document.getElementById("linkedinLink").href = P.linkedin;
 const emailLink = document.getElementById("emailLink");
 
 if (emailLink) {
-  emailLink.href =
-    `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(P.email)}`;
+  emailLink.href = `mailto:${P.email}`;
   emailLink.target = "_blank";
   emailLink.rel = "noopener";
 }
@@ -80,14 +79,24 @@ function renderProjects(filter = "All") {
       : P.projects.filter(p => p.category.startsWith(filter));
 
   grid.innerHTML = list
-    .map(
-      p => `
-        <article class="project-card">
-          <img
+    .map(p => {
+      const media = p.video
+        ? `<video
+            src="${filePath(p.video)}"
+            controls
+            muted
+            playsinline
+            preload="metadata"
+          ></video>`
+        : `<img
             src="${filePath(p.image)}"
             alt="${p.title}"
             loading="lazy"
-          >
+          >`;
+
+      return `
+        <article class="project-card">
+          ${media}
 
           <div class="project-body">
             <div class="project-category">${p.category}</div>
@@ -98,7 +107,7 @@ function renderProjects(filter = "All") {
               ${p.tags.map(t => `<span>${t}</span>`).join("")}
             </div>
 
-            <a
+            
               class="text-link"
               href="${filePath(p.link)}"
               target="_blank"
@@ -108,8 +117,8 @@ function renderProjects(filter = "All") {
             </a>
           </div>
         </article>
-      `
-    )
+      `;
+    })
     .join("");
 }
 
