@@ -30,7 +30,7 @@ window.PORTFOLIO = {
     description:
       "Developed the first prototype of a patent-pending scent-based alarm clock. Successfully presented and defended my alarm clock prototype before 5 industry professionals. Led CAD development, component integration, soldering, breadboard circuitry, 3D printing, and controlled testing of fan speed, placement, and scent selection.",
     image: "alarm-cad.png",
-    pdf: "Engineering Project Portfolio (3).pdf",
+    pdf: "Engineering-Project-Portfolio.pdf",
     tags: [
       "CAD Design",
       "Presentation",
@@ -42,22 +42,11 @@ window.PORTFOLIO = {
 
   projects: [
     {
-      title: "Scent-Based Alarm Clock",
-      category: "Engineering Design",
-      description:
-        "Managed the CAD development and physical integration of the reservoir, atomization disk, fan, wiring, and electrical components into a functional 3D-printed prototype.",
-      image: "alarm-cad.png",
-      link: "Engineering Project Portfolio (3).pdf",
-      tags: ["CAD", "3D Printing", "Soldering"]
-    },
-
-    {
       title: "FTC Robotics Drivetrain & Lift Arm",
       category: "Robotics / Mechanical",
       description:
         "Calculated torque requirements and mechanical advantages to optimize a 4-motor drivetrain, increasing robot velocity by 15%. Designed and integrated a 3D-printed intake and lift arm mechanism in Fusion 360, reducing structural weight by 10%. Placed 9th internationally among 200,000+ students.",
       image: "ftc-lift-arm.jpg",
-      link: "Engineering Project Portfolio (3).pdf",
       tags: ["Fusion 360", "Drivetrain Design", "C#", "Competition"]
     },
 
@@ -66,8 +55,8 @@ window.PORTFOLIO = {
       category: "Physics / Mechanical",
       description:
         "Collaborated to build a functional launcher for a 500+ student pep rally. Tested 5+ pressure levels, 10 launch angles, and 5+ folding methods to improve distance and accuracy.",
-      image: "tshirt-cannon.png",
-      link: "Physics Project Portfolio (2).pdf",
+      video: "tshirt-cannon.mp4",
+      link: "Physics-Project-Portfolio.pdf",
       tags: ["Testing", "Projectile Motion", "Iteration"]
     },
 
@@ -77,7 +66,7 @@ window.PORTFOLIO = {
       description:
         "Independently led mechanical development and construction while testing arm length, spring tension, and release angle across multiple target distances.",
       image: "catapult.png",
-      link: "Physics Project Portfolio (2).pdf",
+      link: "Physics-Project-Portfolio.pdf",
       tags: ["Mechanisms", "Experimental Design", "Precision"]
     },
 
@@ -86,8 +75,8 @@ window.PORTFOLIO = {
       category: "Physics / Systems",
       description:
         "Designed and built a multi-stage machine incorporating 7+ energy transformations, personally leading the mechanical design of the final stages.",
-      image: "rube-goldberg.png",
-      link: "Physics Project Portfolio (2).pdf",
+      video: "rube-goldberg.mp4",
+      link: "Physics-Project-Portfolio.pdf",
       tags: ["Systems", "Mechanisms", "Energy"]
     },
 
@@ -97,28 +86,18 @@ window.PORTFOLIO = {
       description:
         "Operated Haas CNC lathes and mills to manufacture functional components from metal stock, including a wind-powered miniature air pump motor. Video shows live machining of a component from raw stock to finished part.",
       video: "cnc-machining.mp4",
-      link: "Engineering Project Portfolio (3).pdf",
+      link: "Engineering-Project-Portfolio.pdf",
       tags: ["CNC", "Manufacturing", "Haas Machinery"]
     },
 
     {
-      title: "CAD & Manufacturing Projects",
-      category: "CAD / Manufacturing",
+      title: "Alarm Clock Project Proposal",
+      category: "Engineering Design",
       description:
-        "Designed a toy train, custom chess piece, and soccer jersey charm. Also developed manufacturing parts and learned to operate Haas CNC lathes and mills while producing a wind-powered motor.",
-      image: "toy-train-cad.jpg",
-      link: "Engineering Project Portfolio (3).pdf",
-      tags: ["CAD", "CNC", "Manufacturing"]
-    },
-
-    {
-      title: "Additional Physics Builds",
-      category: "Physics / Prototyping",
-      description:
-        "Additional hands-on builds included a cardboard boat, toothpick tower, mousetrap car, electric generator, hot-air balloon, and a Boulder Adventure Park review project.",
-      image: "physics-builds.png",
-      link: "Physics Project Portfolio (2).pdf",
-      tags: ["Prototyping", "Testing", "Problem Solving"]
+        "Conducted research into existing alarm clock solutions and patents, defined design requirements and constraints, and used findings to guide the CAD and prototyping process for the Scent-Based Alarm Clock.",
+      image: "alarm-concept.png",
+      link: "Alarm-Clock-Project-Proposal.pdf",
+      tags: ["Research", "Requirements", "Design Constraints"]
     }
   ]
 };
