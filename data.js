@@ -96,7 +96,7 @@ window.PORTFOLIO = {
       description:
         "Conducted research into existing alarm clock solutions and patents, defined design requirements and constraints, and used findings to guide the CAD and prototyping process for the Scent-Based Alarm Clock.",
       image: "alarm-concept.png",
-      link: "Alarm-Clock-Project-Proposal.pdf",
+      link: "Project Proposal.docx.pdf",
       tags: ["Research", "Requirements", "Design Constraints"]
     }
   ]
