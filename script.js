@@ -95,15 +95,15 @@ function renderProjects(filter = "All") {
           >`;
 
       const pdfLink = p.link
-        ? `
-            class="text-link"
-            href="${filePath(p.link)}"
-            target="_blank"
-            rel="noopener"
-          >
-            View project PDF ↗
-          </a>`
-        : "";
+  ? `
+      class="text-link"
+      href="${filePath(p.link)}"
+      target="_blank"
+      rel="noopener"
+    >
+      View project PDF ↗
+    </a>`
+  : "";
 
       return `
         <article class="project-card">
