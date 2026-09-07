@@ -94,6 +94,17 @@ function renderProjects(filter = "All") {
             loading="lazy"
           >`;
 
+      const pdfLink = p.link
+        ? `
+            class="text-link"
+            href="${filePath(p.link)}"
+            target="_blank"
+            rel="noopener"
+          >
+            View project PDF ↗
+          </a>`
+        : "";
+
       return `
         <article class="project-card">
           ${media}
@@ -107,14 +118,7 @@ function renderProjects(filter = "All") {
               ${p.tags.map(t => `<span>${t}</span>`).join("")}
             </div>
 
-            
-              class="text-link"
-              href="${filePath(p.link)}"
-              target="_blank"
-              rel="noopener"
-            >
-              View project PDF ↗
-            </a>
+            ${pdfLink}
           </div>
         </article>
       `;
