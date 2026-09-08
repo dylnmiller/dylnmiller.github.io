@@ -20,7 +20,7 @@ window.PORTFOLIO = {
   stats: [
     { value: "30+", label: "Physics projects and labs designed, built, and tested." },
     { value: "100%", label: "Up-time across $200,000+ of Haas CNC lathes and mills." },
-    { value: "9th", label: "Placement in the FIRST Tech Challenge, involving 200,000+ students across 110+ countries." },
+    { value: "9th", label: "Place in the FIRST Tech Challenge, involving 200,000+ students across 110+ countries." },
     { value: "8+", label: "Technical engineering projects." }
   ],
 
