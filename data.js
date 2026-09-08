@@ -42,32 +42,22 @@ window.PORTFOLIO = {
 
   projects: [
     {
+      title: "CNC Manufacturing & Machining",
+      category: "CAD / Manufacturing",
+      description:
+        "Operated Haas CNC lathes and mills to manufacture functional components from metal stock, including a wind-powered miniature air pump motor. Video shows live machining of a component from raw stock to finished part.",
+      video: "cnc-machining.mp4",
+      link: "Engineering-Project-Portfolio.pdf",
+      tags: ["CNC", "Manufacturing", "Haas Machinery"]
+    },
+
+    {
       title: "FTC Robotics Drivetrain & Lift Arm",
       category: "Robotics / Mechanical",
       description:
         "Calculated torque requirements and mechanical advantages to optimize a 4-motor drivetrain, increasing robot velocity by 15%. Designed and integrated a 3D-printed intake and lift arm mechanism in Fusion 360, reducing structural weight by 10%. Placed 9th internationally among 200,000+ students.",
       image: "ftc-lift-arm.jpg",
       tags: ["Fusion 360", "Drivetrain Design", "C#", "Competition"]
-    },
-
-    {
-      title: "T-Shirt Cannon",
-      category: "Physics / Mechanical",
-      description:
-        "Collaborated to build a functional launcher for a 500+ student pep rally. Tested 5+ pressure levels, 10 launch angles, and 5+ folding methods to improve distance and accuracy.",
-      video: "tshirt-cannon.mp4",
-      link: "Physics-Project-Portfolio.pdf",
-      tags: ["Testing", "Projectile Motion", "Iteration"]
-    },
-
-    {
-      title: "Catapult",
-      category: "Physics / Mechanical",
-      description:
-        "Independently led mechanical development and construction while testing arm length, spring tension, and release angle across multiple target distances.",
-      image: "catapult.png",
-      link: "Physics-Project-Portfolio.pdf",
-      tags: ["Mechanisms", "Experimental Design", "Precision"]
     },
 
     {
@@ -81,13 +71,23 @@ window.PORTFOLIO = {
     },
 
     {
-      title: "CNC Manufacturing & Machining",
-      category: "CAD / Manufacturing",
+      title: "Catapult",
+      category: "Physics / Mechanical",
       description:
-        "Operated Haas CNC lathes and mills to manufacture functional components from metal stock, including a wind-powered miniature air pump motor. Video shows live machining of a component from raw stock to finished part.",
-      video: "cnc-machining.mp4",
-      link: "Engineering-Project-Portfolio.pdf",
-      tags: ["CNC", "Manufacturing", "Haas Machinery"]
+        "Independently led mechanical development and construction while testing arm length, spring tension, and release angle across multiple target distances.",
+      image: "catapult.png",
+      link: "Physics-Project-Portfolio.pdf",
+      tags: ["Mechanisms", "Experimental Design", "Precision"]
+    },
+
+    {
+      title: "T-Shirt Cannon",
+      category: "Physics / Mechanical",
+      description:
+        "Collaborated to build a functional launcher for a 500+ student pep rally. Tested 5+ pressure levels, 10 launch angles, and 5+ folding methods to improve distance and accuracy.",
+      video: "tshirt-cannon.mp4",
+      link: "Physics-Project-Portfolio.pdf",
+      tags: ["Testing", "Projectile Motion", "Iteration"]
     },
 
     {
